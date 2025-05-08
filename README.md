@@ -1,6 +1,15 @@
 Currently working on YCSore
 Demo: https://ycstore.vercel.app/
 
+After modify seed.ts
+npx tsx ./db/seed
+
+After modify schema.prisma
+npx prisma generate
+
+Start run prisma
+npx prisma studio
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

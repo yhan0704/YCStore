@@ -13,6 +13,9 @@ npx prisma studio
 Zod(schema/validator) -> types -> prisma.schema(db) -> npx prisma generate -> npx prisma migrate dev --name 000 -> After modify seed.ts npx tsx ./db/seed (optional)
 -> create 000.action.ts
 
+Install shadcn
+npx shadcn@latest add ----
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

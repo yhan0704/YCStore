@@ -16,6 +16,7 @@ const OrderDetailsPage = async (props: {
   const { id } = await props.params;
 
   const order = await getOrderById(id);
+  console.log(order);
   if (!order) notFound();
 
   return (
@@ -24,6 +25,7 @@ const OrderDetailsPage = async (props: {
         ...order,
         shippingAddress: order.shippingAddress as ShippingAddress,
       }}
+      paypalClientId={process.env.PAYPAL_CLIENT_ID || "sb"}
     />
   );
 };
